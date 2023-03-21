@@ -1,0 +1,184 @@
+@import url("https://fonts.googleapis.com/css2?family=Bona+Nova&display=swap");
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+:root {
+  --color1: ##15151b;
+  --color2: #25252b;
+}
+html {
+  scroll-behavior: smooth;
+}
+@keyframes bg-anim {
+}
+.prevent-select {
+  -webkit-user-select: none; /* Safari */
+  -ms-user-select: none; /* IE 10 and IE 11 */
+  user-select: none; /* Standard syntax */
+}
+body {
+  width: 100vw;
+  height: 100vh;
+  margin: 0;
+  overflow-x: hidden;
+  background-color: #15151b;
+  font-family: "Bona Nova", sans-serif;
+}
+
+h2 {
+  margin-bottom: 20px !important;
+}
+.headerT {
+  font-size: 68px;
+  margin-bottom: 100px;
+  color: whitesmoke;
+  text-align: center;
+  width: 70wh;
+}
+
+.slider > img {
+  width: 44vmin;
+  height: 60vmin;
+  object-fit: cover;
+  object-position: 100% 50%;
+}
+
+.slider {
+  display: flex;
+  gap: 6vmin;
+  position: absolute;
+  left: 50%;
+  top: 60%;
+  transform: translate(0, -45%);
+}
+img {
+  -moz-user-select: none; /* These user-select properties are inheritable, used to prevent text selection */
+  -webkit-user-select: none;
+  -ms-user-select: none; /* From IE10 only */
+  user-select: none; /* Not valid CSS yet, as of July 2012 */
+
+  -webkit-user-drag: none; /* Prevents dragging of images/divs etc */
+}
+
+.container {
+  margin-top: 69vmin;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.hero {
+  width: 90vw;
+  margin-top: 10vmin;
+  min-height: 150vh;
+  padding-bottom: 30px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: center;
+  background-color: var(--color2);
+  box-shadow: 2px 1px 2px 9px rgba(0, 0, 0, 0.05);
+  margin: 40px 0 40px 0;
+}
+.img_to_gif {
+  position: relative;
+}
+.img_transition {
+  position: absolute;
+}
+.img_transition:hover {
+  opacity: 0;
+}
+.arrow_down {
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+}
+
+@keyframes Arrow_anim {
+  50% {
+    transform: translate(0, 20%);
+  }
+  100% {
+    transform: translate(0, 0);
+  }
+}
+
+#arrow {
+  animation: Arrow_anim 2s infinite;
+}
+
+.about {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  padding: 20px 40px 20px 40px;
+}
+
+.about > p {
+  font-size: 3rem;
+  color: whitesmoke;
+}
+.form-control {
+  display: flex;
+  flex-direction: column;
+  min-height: 60vmin;
+  width: 85vw;
+  background-color: var(--color2);
+}
+.form_register {
+  display: grid;
+  grid-template-columns: 1fr;
+  place-items: center;
+}
+
+.form_register > div {
+  display: flex;
+  flex-direction: column;
+  gap: 1vmin;
+  margin-bottom: 2vmin;
+  padding-left: 20px;
+}
+
+.form_register > div > input {
+  min-height: 6vmin;
+  min-width: 40vmin;
+
+  background-color: #15151b;
+  border: 0;
+  border-radius: 2px;
+  font-size: 24px;
+  color: whitesmoke;
+  font-family: "Bona Nova", sans-serif;
+  text-align: center;
+}
+
+.form_register > div > input:focus {
+  outline: 0;
+}
+
+small {
+  font-size: 18px;
+  color: brown;
+  margin-top: 2vmin;
+  margin-bottom: 2vmin;
+}
+
+button {
+  background-color: #15151b;
+  border: 0;
+  width: 30vmin;
+  height: 6vmin;
+  color: whitesmoke;
+  font-size: 24px;
+  cursor: pointer;
+}
+.disabled {
+  cursor: default;
+}
+
+.form_register > div > label {
+  color: whitesmoke;
+  font-family: "Bona Nova", sans-serif;
+  font-size: 24px;
+}

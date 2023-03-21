@@ -1,0 +1,120 @@
+<html lang="ru">
+
+  <head>
+    <title>RAUH-Welt BEGRIFF</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link href="styles/style.css" rel="stylesheet" />
+    <script src="js/slider.js" defer></script>
+  </head>
+
+  <body>
+    <div class="bg"></div>
+    <header>
+      <h1 class="prevent_select headerT" draggable="false">
+        RAUH-Welt BEGRIFF -
+        <br />Лучшее, что происходило с машинами
+        <br />
+        Porsche
+      </h1>
+    </header>
+    <main>
+      <div class="slider">
+        <img
+          src="src/cyan_rwb_backside.jpg"
+          alt=""
+          draggable="false"
+          ondragstart="return false;"
+        />
+        <img
+          src="src/cyan_rwb_side.jpg"
+          alt=""
+          draggable="false"
+          ondragstart="return false;"
+        />
+        <img
+          src="src/cyan_rwb_front.jpg"
+          alt=""
+          draggable="false"
+          ondragstart="return false;"
+        />
+        <img
+          src="src/blue_rwb_backside.jpg"
+          alt=""
+          draggable="false"
+          ondragstart="return false;"
+        />
+        <img
+          src="src/blue_rwb_back.jpg"
+          alt=""
+          draggable="false"
+          ondragstart="return false;"
+        />
+      </div>
+      <div class="container">
+        <div class="arrow_down prevent_select"><a href="#hero-section"><img
+              src="src/arrow.svg"
+              id="arrow"
+              width="40"
+            /></a>
+        </div>
+        <div class="hero" id="hero-section">
+          <h2 class="headerT"> RWB - больше,<br /> чем просто машины</h2>
+          <img src="src/akira_nakai.jpg" alt="Человек-легенда Японии" />
+          <article class="about">
+            <p>Его телефон розовый. Любимое пиво — Stella Artois. Его Porsche —
+              одни из самых неоднозначных в мире. Это история Акиры Накаи и его
+              тюнинг-ателье — Rauh Welt Begriff (RWB). Ныне известный за свои
+              безумные Porsche, Акира Накаи начинал совсем на другой сцене.
+              Участник Rough World, дрифт-крю из Японии, Накаи делал первые шаги
+              с модификаций и дрифта на легендарной AE86. Это было в те времена,
+              когда Накаи начинал делать себе имя в мире тюнинга.</p>
+            <p>В буквальном переводе с немецкого "rauh" — "грубый", "welt" —
+              "мир", а "begriff" — концепция. RWB, или же "грубая концепция
+              мира", отдает дань уважения дрифтерским корням Накаи, его стилю
+              вождения и менталитету. Кто-то скажет, что работы RWB аляповаты и
+              неаккуратны, но Накаи относится к ним, как к наделению автомобиля
+              душой и характером.</p>
+          </article>
+          <div class="img_to_gif">
+            <video
+              src="src/porsche.mp4"
+              id="hoverme_video"
+              height="310"
+              muted
+              loop
+            />
+          </div>
+        </div>
+        <div class="form-control">
+          <h2 class="headerT">Закажите услуги Накаи-сана сегодня!</h2>
+          <form action="/register" method="POST" class="form_register">
+            <div>
+              <label for="name">Имя</label>
+              <input name="name" id="name" type="text" />
+            </div>
+            <div>
+              <label for="surname">Фамилия</label>
+              <input name="surname" id="surname" type="text" />
+            </div>
+            <div>
+              <label for="e-mail">Ваша почта</label>
+              <input name="login" id="e-mail" type="text" />
+            </div>
+            <div>
+              <label for="pass">Придумайте новый пароль</label>
+              <input name="pass" id="pass" type="password" />
+            </div>
+            <div>
+              <label for="repeatpass">Повторите ваш новый пароль</label>
+              <input name="repeatpass" id="repeatpass" type="password" />
+            </div>
+            <small id="errorcode"></small>
+            <button type="submit" id="submit">Отправить заявку</button>
+          </form>
+        </div>
+      </div>
+    </main>
+  </body>
+
+</html>
